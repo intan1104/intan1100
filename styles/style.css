@@ -1,0 +1,155 @@
+/* FONTS */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+</style>
+
+/* VARIABLES */ 
+:root {
+    --primary-color: rgb(52, 99, 137); 
+    --dark-color: black; 
+    --gray-color: gray; 
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px; 
+}
+
+/* RESET CSS */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img { 
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/*GLOBAL CSS */
+section { 
+    padding: 70px 0;
+}
+
+section .section-title { 
+    font-size: 32px;;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-orange {
+    background-color: rgb(52, 99, 137);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: gray;
+    color: black;
+}
+
+.text-orange {
+    color: rgb(52, 99, 137);
+}
+
+.text-dark {
+    color: black;
+}
+
+.fs-7 {
+    font-size: 14px;
+}
+
+.form-control:focus { 
+    box-shadow: none; 
+    border-color: rgb(52, 99, 137);
+}
+
+/* CSS PER SECTION */
+
+/* NAVBAR */ 
+.navbar .nav-item .nav-link:hover, 
+.navbar .nav-item .nav-link.active { 
+    color: rgb(28, 146, 242);
+}
+
+/* HEADER */ 
+.header-section .header-title { 
+    font-size: 40px;;
+}
+
+.header-section .header-skill { 
+    color: rgb(52, 99, 137);
+}
+
+.header-section .header-skill:hover { 
+    color: rgb(52, 99, 137) ;
+}
+
+.header-section .header-skill i { 
+    transition: .3s;
+}
+
+.header-section .header-skill:hover i {
+    transform: rotate(-45deg);
+}
+
+.header-section .header-img, .skills-section .skills-img {
+    width: 90%;
+}
+
+.header-img {
+    width: 10%;
+    margin-left: 180%;
+    position:relative;
+    bottom: 450px;
+}
+
+/* PORTOFOLIO */
+.portofolio-section .card .card-img-top{ 
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portofolio-section { 
+    color: rgb(52, 99, 137);
+}
+
+.section-title {
+    color: black;
+}
+
+@media screen and (max-width: 768px) { 
+    .portofolio-section .card .card-img-top{
+        height: 100px;
+    }
+} 
+
+/* SKILLS */
+.skills-section, footer {
+    background-color: gray; 
+}
+
+.skills-section .progress-bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.skills-section .progress-bar .progress{ 
+    background-color: rgb(52, 99, 137);
+}
+
+/* ACHIEVEMENT */
+.achievement-section { 
+    color: rgb(52, 99, 137);
+}
+
+.section-title {
+    color: black;
+}
